@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 34, 87);
+}
+
+.container{
+    margin-top: 30px;
+    outline: 3px solid white ;
+    width: 40%;
+    height:auto;
+    text-align: center;
+    border-radius: 35px;
+    padding:20px;
+    background-color:black;   
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px 55px;    
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: sans-serif;
+    outline: 2px solid grey;
+    
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 55px 5px;
+    outline: 2px solid grey;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 100px;
+}
+
+
+#sumbtn{
+    background-color: rgb(6, 125, 204);
+    color: white;
+    padding: 10px;
+    border-radius: 55px 5px;
+    outline: 2px solid grey;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    width: 100px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px 55px;
+    outline: 2px solid grey;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    width: 70%;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 90%; /* Make the container wider on mobile */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 35px; /* Reduce font size for smaller screens */
+    }
+
+    input {
+        width: 100%; /* Make the input take full width */
+        padding: 8px; /* Adjust padding */
+        font-size: 18px;
+    }
+
+    .btn, #sumbtn {
+        width: 100%; /* Buttons take full width on mobile */
+        margin-top: 10px; /* Add space between buttons */
+    }
+
+    p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+    .container {
+        width: 70%; /* Adjust container width for tablets */
+    }
+
+    h1 {
+        font-size: 40px; /* Slightly larger font on tablets */
+    }
+}
